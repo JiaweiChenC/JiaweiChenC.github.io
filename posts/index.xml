@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <title>Posts on Virgo</title>
+    <link>https://ovirgo.com/posts/</link>
+    <description>Recent content in Posts on Virgo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="https://ovirgo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://ovirgo.com/posts/my-first-post/</link>
       <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://ovirgo.com/posts/my-first-post/</guid>
       <description></description>
     </item>
     
