@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Virgo</title>
+        <title></title>
         <link>/</link>
         <description>This is my cool site</description>
         <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate>
