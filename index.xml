@@ -1,11 +1,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title></title>
+        <title>Jiawei Chen</title>
         <link>/</link>
-        <description>This is my cool site</description>
+        <description>Hello world</description>
         <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Memory</title>
+    <link>/posts/memory/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Author</author>
+    <guid>/posts/memory/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
     <title>Test</title>
     <link>/posts/my-first-post/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
