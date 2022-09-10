@@ -1,19 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Virgo</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Virgo</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>/posts/my-first-post/</link>
-      <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
-      
-      <guid>/posts/my-first-post/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Virgo</title>
+        <link>/posts/</link>
+        <description>All Posts | Virgo</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Test</title>
+    <link>/posts/my-first-post/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Author</author>
+    <guid>/posts/my-first-post/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
