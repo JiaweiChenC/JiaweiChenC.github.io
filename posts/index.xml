@@ -3,11 +3,12 @@
         <title>All Posts - Jiawei Chen</title>
         <link>/posts/</link>
         <description>All Posts | Jiawei Chen</description>
-        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
+            <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Memory</title>
     <link>/posts/memory/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
-    <author>Author</author>
+    <author>Jiawei Chen</author>
     <guid>/posts/memory/</guid>
     <description><![CDATA[]]></description>
 </item>
@@ -15,7 +16,7 @@
     <title>Test</title>
     <link>/posts/my-first-post/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
-    <author>Author</author>
+    <author>Jiawei Chen</author>
     <guid>/posts/my-first-post/</guid>
     <description><![CDATA[]]></description>
 </item>

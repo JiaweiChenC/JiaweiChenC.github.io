@@ -3,5 +3,6 @@
         <title>Categories - Category - Jiawei Chen</title>
         <link>/categories/</link>
         <description>Categories - Category - Jiawei Chen</description>
-        <generator>Hugo -- gohugo.io</generator><atom:link href="/categories/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
+            <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><atom:link href="/categories/" rel="self" type="application/rss+xml" /></channel>
 </rss>
