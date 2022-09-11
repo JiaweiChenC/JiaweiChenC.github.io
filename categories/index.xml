@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - Jiawei Chen</title>
+        <title>Categories - Category - </title>
         <link>/categories/</link>
-        <description>Categories - Category - Jiawei Chen</description>
+        <description>Categories - Category - </description>
         <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
             <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><atom:link href="/categories/" rel="self" type="application/rss+xml" /></channel>
 </rss>
