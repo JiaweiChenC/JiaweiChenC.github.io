@@ -33,6 +33,16 @@ Properties \( \operatorname{Ad}_{T_{1}}\left(\operatorname{Ad}_{T_{2}}(\mathcal{
     <description><![CDATA[$c = \pm\sqrt{a^2 + b^2}$ and \(f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi\)]]></description>
 </item>
 <item>
+    <title>NP problem</title>
+    <link>/posts/20220622111616-np_problem/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220622111616-np_problem/</guid>
+    <description><![CDATA[P, NP, NP-complete problem Figure 1: NP problem
+P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
+NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)]]></description>
+</item>
+<item>
     <title>Robotics Twist</title>
     <link>/posts/20220814145521-twist/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
