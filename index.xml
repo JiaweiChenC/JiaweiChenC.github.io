@@ -43,6 +43,14 @@ P A set of problems that can be solved by a deterministic Turing machine in poly
 NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)]]></description>
 </item>
 <item>
+    <title>Positional Encoding in Transformer</title>
+    <link>/posts/20220729-positional_encoding/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220729-positional_encoding/</guid>
+    <description><![CDATA[Positional encoding in Transformer criteria Ideally, the following criteria should be satisfied It should output a unique encoding for each time-step Distance between any two time-steps should be consistent across sentences with different lengths out model should generalize to longer sentences without any efforts. Its values should be bounded It must be deterministic Proposed method \[ P(k, 2i) = \sin(\frac{k}{n^{2i/d}}) \] \[ P(k, 2i + 1) = \cos(\frac{k}{n^{2i/d}}) \] k: position of an object input sequence, \(0 \leq k &lt; L/2\) d: Dimension of the output embedding space P(K, j): Position function for mapping a position k in the input sequence to index(k, j) of the positional matrix) n: User defined scalar.]]></description>
+</item>
+<item>
     <title>Robotics Twist</title>
     <link>/posts/20220814145521-twist/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
