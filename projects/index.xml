@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jiawei Chen</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on Jiawei Chen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
+    <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster>
+    <lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adjoint representation</title>
+      <link>/projects/20220902015400-adjoint_representation/</link>
+      <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+      <author>jc5667@columbia.edu (Jiawei Chen)</author>
+      <guid>/projects/20220902015400-adjoint_representation/</guid>
+      <description>&lt;p&gt;Hello Learning Adjoint representation for Modern Robotics&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

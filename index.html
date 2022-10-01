@@ -37,7 +37,7 @@
             <a href="/" title="Jiawei Chen">Jiawei&#39;s Blog</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Some posts recentely"> POSTS </a><a class="menu-item" href="/aboutme/" title="some of my information"> ABOUTME </a><a class="menu-item" href="/projects/" title="my projects"> PROJECTS </a><a class="menu-item" href="/categories/" title="menu"> CATEGORIES </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/posts/" title="Some posts recentely"> POSTS </a><a class="menu-item" href="/aboutme/" title="some of my information"> ABOUTME </a><a class="menu-item" href="/projects/" title="my projects"> PROJECTS </a><a class="menu-item" href="/categories/" title="categories"> CATEGORIES </a><a class="menu-item" href="/tags/" title="tags"> TAGS </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
@@ -79,7 +79,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="Some posts recentely">POSTS</a><a class="menu-item" href="/aboutme/" title="some of my information">ABOUTME</a><a class="menu-item" href="/projects/" title="my projects">PROJECTS</a><a class="menu-item" href="/categories/" title="menu">CATEGORIES</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/posts/" title="Some posts recentely">POSTS</a><a class="menu-item" href="/aboutme/" title="some of my information">ABOUTME</a><a class="menu-item" href="/projects/" title="my projects">PROJECTS</a><a class="menu-item" href="/categories/" title="categories">CATEGORIES</a><a class="menu-item" href="/tags/" title="tags">TAGS</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
@@ -97,20 +97,38 @@
         data-sizes="auto"
         alt="https://media-exp1.licdn.com/dms/image/C4E03AQGGWMgE4qYhBg/profile-displayphoto-shrink_400_400/0/1650292549810?e=1669852800&amp;v=beta&amp;t=yDlqhCHLRGijmiJs2GQPn2Nv9meKQ3aUFgPoc964-UE"
         title="https://media-exp1.licdn.com/dms/image/C4E03AQGGWMgE4qYhBg/profile-displayphoto-shrink_400_400/0/1650292549810?e=1669852800&amp;v=beta&amp;t=yDlqhCHLRGijmiJs2GQPn2Nv9meKQ3aUFgPoc964-UE" /></a></div><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"><a href="https://github.com/JiaweiChenC" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github fa-fw" aria-hidden="true"></i></a><a href="https://linkedin.com/in/jiaweiChen01" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UC0FVvaEeakOiaKu7RAOvzYw" title="YouTube" target="_blank" rel="noopener noreffer me"><i class="fab fa-youtube fa-fw" aria-hidden="true"></i></a><a href="https://space.bilibili.com/JiaweiChen" title="bilibili" target="_blank" rel="noopener noreffer me"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/bilibili.svg" aria-hidden="true"></i></a><a href="tel:&#43;19177425821" title="Phone" rel="me"><i class="fas fa-phone fa-fw" aria-hidden="true"></i></a><a href="mailto:jc5667@columbia.edu" title="Email" rel="me"><i class="far fa-envelope fa-fw" aria-hidden="true"></i></a></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+<article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/20220902015400-adjoint_representation/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="ea.png"
+        data-srcset="ea.png, ea.png 1.5x, ea.png 2x"
+        data-sizes="auto"
+        alt="ea.png"
+        title="ea.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
         <a href="/posts/20220902015400-adjoint_representation/">Adjoint representation</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span></div><div class="content">Adjoint representation Given \(T = (R, p) \in SE(3)\) \[ \left[\operatorname{Ad}_{T}\right]=\left[\begin{array}{cc}R &amp; 0 \\ {[p] R} &amp; R\end{array}\right] \in \mathbb{R}^{6 \times 6} \]
-Adjoint map The Adjoint map associated with \(T\) is: \[ \mathcal{V}^{\prime}=\left[\operatorname{Ad}_{T}\right] \mathcal{V} \] which is sometimes also written as \[ \mathcal{V}^{\prime}=\operatorname{Ad}_{T} (\mathcal{V}) \] In terms of the matrix form \([\mathcal{V}] \in se(3) \) of \(\mathcal{V} \in \mathbb{R}^{6}\) \[ \left[\mathcal{V}^{\prime}\right]=T[\mathcal{V}] T^{-1} \]
-Properties \( \operatorname{Ad}_{T_{1}}\left(\operatorname{Ad}_{T_{2}}(\mathcal{V})\right)=\operatorname{Ad}_{T_{1} T_{2}}(\mathcal{V}) \) or \( \left[\operatorname{Ad}_{T_{1}}\right]\left[\operatorname{Ad}_{T_{2}}\right] \mathcal{V}=\left[\operatorname{Ad}_{T_{1} T_{2}}\right] \mathcal{V} \) and \[ \left[\operatorname{Ad}_{T}\right]^{-1}=\left[\operatorname{Ad}_{T^{-1}}\right] \]</div><div class="post-footer">
-        <a href="/posts/20220902015400-adjoint_representation/">Read More</a></div>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/projects/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>projects</a></span></div><div class="content"><p>Hello Learning Adjoint representation for Modern Robotics</p></div><div class="post-footer">
+        <a href="/posts/20220902015400-adjoint_representation/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hello/">hello</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><div class="featured-image-preview">
+            <a href="/posts/emacs/"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="ea.png"
+        data-srcset="ea.png, ea.png 1.5x, ea.png 2x"
+        data-sizes="auto"
+        alt="ea.png"
+        title="ea.png" /></a>
+        </div><h1 class="single-title" itemprop="name headline">
+        <a href="/posts/emacs/">Emacs</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/projects/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>projects</a></span></div><div class="content"><p>Do everything with Emacs</p></div><div class="post-footer">
+        <a href="/posts/emacs/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/coding/">coding</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/20220910145601-hermite_matrix/">Hermite Matrix</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span></div><div class="content">Hermite Matrix Definition In mathematics, a Hermitian matrix(or self-joint matrix) is a complex square matrix that is equal to its own conjugate transpose - that is, the element in the i-th row and j-th column is equal to the complex conjugate of the element in the j-th row and i-th column, for all indices i and j: \[ a_{i j}=\overline{a_{j i}} \] or in matrix form \[ A=\overline{A^{\top}} \] Hermitian matrices can be understood as the complex extension of real symmetric matrices If a conjugate transpose of a matrix A is denoted by \(A^H\), then the Hermitian property can be written concisely as \[ A = A^{H} \] Other equivalent notations in common use are \[ A^{\mathrm{H}}=A^{\dagger}=A^{*} \]</div><div class="post-footer">
         <a href="/posts/20220910145601-hermite_matrix/">Read More</a></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/memory/">Memory</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span></div><div class="content">$c = \pm\sqrt{a^2 + b^2}$ and \(f(x)=\int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d \xi\)</div><div class="post-footer">
-        <a href="/posts/memory/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/posts/20220622111616-np_problem/">NP problem</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-08-19">2022-08-19</time></span></div><div class="content">P, NP, NP-complete problem Figure 1: NP problem

@@ -4,5 +4,21 @@
         <link>/tags/</link>
         <description>Tags - Tag - Jiawei Chen</description>
         <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
-            <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><atom:link href="/tags/" rel="self" type="application/rss+xml" /></channel>
+            <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>coding</title>
+    <link>/tags/coding/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/tags/coding/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>hello</title>
+    <link>/tags/hello/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/tags/hello/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>
