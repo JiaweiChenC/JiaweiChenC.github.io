@@ -4,36 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>NP problem - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="NP problem" />
-<meta property="og:description" content="P, NP, NP-complete problem Figure 1: NP problem
-P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
-NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)" />
+        <title>My Emacs - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="My Emacs" />
+<meta property="og:description" content="Do everything with Emacs" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/20220622111616-np_problem/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/emacs/emacs/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-19T23:52:39-04:00" />
 <meta property="article:modified_time" content="2022-08-19T23:52:39-04:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NP problem"/>
-<meta name="twitter:description" content="P, NP, NP-complete problem Figure 1: NP problem
-P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
-NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)"/>
+<meta name="twitter:title" content="My Emacs"/>
+<meta name="twitter:description" content="Do everything with Emacs"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220622111616-np_problem/" /><link rel="prev" href="/posts/20220729-positional_encoding/" /><link rel="next" href="/posts/emacs/emacs/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/emacs/emacs/" /><link rel="prev" href="/posts/20220622111616-np_problem/" /><link rel="next" href="/posts/20220910145601-hermite_matrix/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "NP problem",
+        "headline": "My Emacs",
         "inLanguage": "",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/20220622111616-np_problem\/"
-        },"genre": "posts","wordcount":  216 ,
-        "url": "\/posts\/20220622111616-np_problem\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
+            "@id": "\/posts\/emacs\/emacs\/"
+        },"genre": "posts","keywords": "coding","wordcount":  6 ,
+        "url": "\/posts\/emacs\/emacs\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -101,60 +97,20 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <div class="search-dropdown mobile">
         <div id="search-dropdown-mobile"></div>
     </div><main class="main">
-                <div class="container"><div class="toc" id="toc-auto">
-            <h2 class="toc-title">Contents</h2>
-            <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">NP problem</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;216 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
-                <div class="details-summary toc-title">
-                    <span>Contents</span>
-                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
-                </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#p-np-np-complete-problem">P, NP, NP-complete problem</a>
-      <ul>
-        <li><a href="#p">P</a></li>
-        <li><a href="#np">NP</a></li>
-        <li><a href="#np-complete">NP-complete</a></li>
-        <li><a href="#np-hard">NP-Hard</a></li>
-      </ul>
-    </li>
-    <li><a href="#some-question">Some question</a>
-      <ul>
-        <li><a href="#decision-vs-optimization">Decision vs optimization</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h2 id="p-np-np-complete-problem">P, NP, NP-complete problem</h2>
-<p><a id="figure--fig:label"></a></p>
-<figure><img src="/ox-hugo/NP_problem.png"
-         alt="Figure 1: NP problem"/><figcaption>
-            <p><span class="figure-number">Figure 1: </span>NP problem</p>
-        </figcaption>
-</figure>
-
-<h3 id="p">P</h3>
-<p>A set of problems that can be solved by a deterministic Turing machine in polynomial-time.</p>
-<h3 id="np">NP</h3>
-<p>The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)</p>
-<p>Informally, NP is a set of decision problems that can be solved by a polynomial-time via a lucky algorithm, a magical algorithm that always makes a right guess among the given set of choices.</p>
-<h3 id="np-complete">NP-complete</h3>
-<p>NP-complete problems are the hardest problems in the NP set. A decision problem L is NP-complete if:</p>
-<ol>
-<li>L is in NP(Any given solution for NP-complete problems can be verified quickly, but there is no efficient known solution)</li>
-<li>Every problem in NP is reducible to L in polynomial time</li>
-</ol>
-<h3 id="np-hard">NP-Hard</h3>
-<p>A problem is NP-hard if it follows property 2 mentioned above, and doesn&rsquo;t need to follow property 1. Therefore, the NP-complete set is also a subset of the NP-hard set.</p>
-<h2 id="some-question">Some question</h2>
-<h3 id="decision-vs-optimization">Decision vs optimization</h3>
-<p>NP-completeness applies to the realm of decision problems. Because it&rsquo;s easier to compare the difficulty of decision problems than that of optimization problems.</p>
-</div><div class="post-footer" id="post-footer">
+                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">My Emacs</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/personal/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>personal</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;6 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="content" id="content"><p>Do everything with Emacs</p>
+<h1 id="my-emacs">My Emacs</h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://www.cjiawei.com/my_emacs.png"
+        data-srcset="https://www.cjiawei.com/my_emacs.png, https://www.cjiawei.com/my_emacs.png 1.5x, https://www.cjiawei.com/my_emacs.png 2x"
+        data-sizes="auto"
+        alt="https://www.cjiawei.com/my_emacs.png"
+        title="emacs" /></p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -163,20 +119,20 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/20220622111616-np_problem/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/emacs/emacs/" data-title="My Emacs" data-hashtags="coding"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/emacs/emacs/" data-hashtag="coding"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/emacs/emacs/" data-title="My Emacs"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/emacs/emacs/" data-title="My Emacs"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/emacs/emacs/" data-title="My Emacs"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/coding/">coding</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20220729-positional_encoding/" class="prev" rel="prev" title="Positional Encoding in Transformer"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Positional Encoding in Transformer</a>
-            <a href="/posts/emacs/emacs/" class="next" rel="next" title="My Emacs">My Emacs<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/20220622111616-np_problem/" class="prev" rel="prev" title="NP problem"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>NP problem</a>
+            <a href="/posts/20220910145601-hermite_matrix/" class="next" rel="next" title="Hermite Matrix">Hermite Matrix<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
