@@ -4,31 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Positional Encoding in Transformer - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Positional Encoding in Transformer" />
-<meta property="og:description" content="Positional encoding in Transformer criteria Ideally, the following criteria should be satisfied It should output a unique encoding for each time-step Distance between any two time-steps should be consistent across sentences with different lengths out model should generalize to longer sentences without any efforts. Its values should be bounded It must be deterministic Proposed method \[ P(k, 2i) = \sin(\frac{k}{n^{2i/d}}) \] \[ P(k, 2i &#43; 1) = \cos(\frac{k}{n^{2i/d}}) \] k: position of an object input sequence, \(0 \leq k &lt; L/2\) d: Dimension of the output embedding space P(K, j): Position function for mapping a position k in the input sequence to index(k, j) of the positional matrix) n: User defined scalar." />
+        <title>Positional encoding - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Positional encoding" />
+<meta property="og:description" content="Positional encoding in Transformer" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/20220729-positional_encoding/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-19T23:52:39-04:00" />
 <meta property="article:modified_time" content="2022-08-19T23:52:39-04:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Positional Encoding in Transformer"/>
-<meta name="twitter:description" content="Positional encoding in Transformer criteria Ideally, the following criteria should be satisfied It should output a unique encoding for each time-step Distance between any two time-steps should be consistent across sentences with different lengths out model should generalize to longer sentences without any efforts. Its values should be bounded It must be deterministic Proposed method \[ P(k, 2i) = \sin(\frac{k}{n^{2i/d}}) \] \[ P(k, 2i &#43; 1) = \cos(\frac{k}{n^{2i/d}}) \] k: position of an object input sequence, \(0 \leq k &lt; L/2\) d: Dimension of the output embedding space P(K, j): Position function for mapping a position k in the input sequence to index(k, j) of the positional matrix) n: User defined scalar."/>
+<meta name="twitter:title" content="Positional encoding"/>
+<meta name="twitter:description" content="Positional encoding in Transformer"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220729-positional_encoding/" /><link rel="prev" href="/posts/20220814145521-twist/" /><link rel="next" href="/posts/20220622111616-np_problem/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220729-positional_encoding/" /><link rel="next" href="/posts/20220622111616-np_problem/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Positional Encoding in Transformer",
+        "headline": "Positional encoding",
         "inLanguage": "",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/20220729-positional_encoding\/"
-        },"genre": "posts","wordcount":  272 ,
+        },"genre": "posts","wordcount":  295 ,
         "url": "\/posts\/20220729-positional_encoding\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -97,11 +97,33 @@
     <div class="search-dropdown mobile">
         <div id="search-dropdown-mobile"></div>
     </div><main class="main">
-                <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Positional Encoding in Transformer</h1><div class="post-meta">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Positional encoding</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;272 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;295 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="content" id="content"><h2 id="positional-encoding-in-transformer">Positional encoding in Transformer</h2>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#positional-encoding-in-transformer--dot-dot-note-20220727191942-transformer-dot-md">Positional encoding in Transformer</a>
+      <ul>
+        <li><a href="#criteria">criteria</a></li>
+        <li><a href="#proposed-method">Proposed method</a></li>
+        <li><a href="#example">Example</a></li>
+        <li><a href="#coding-the-positional-encoding-matrix">Positional encoding matrix</a></li>
+        <li><a href="#to-understand-the-positional-encoding--20220729-positional-encoding-dot-md--start-by-looking-at-the-sine-wave-for-different-positions-with-n-10000-and-d-512">sine wave for different positions with n = 10000 and d = 512</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Positional encoding in Transformer</p>
+<h2 id="positional-encoding-in-transformer--dot-dot-note-20220727191942-transformer-dot-md">Positional encoding in Transformer</h2>
 <h3 id="criteria">criteria</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Ideally, the following criteria should be satisfied
 </span></span></code></pre></div><ul>
@@ -120,7 +142,7 @@ P(k, 2i + 1) = \cos(\frac{k}{n^{2i/d}})
 k: position of an object input sequence, \(0 \leq k &lt; L/2\)
 d: Dimension of the output embedding space
 P(K, j): Position function for mapping a position k in the input sequence to index(k, j) of the positional matrix)
-n: User defined scalar. Set to 10000 by the authors of Attention Is All You Need.
+n: User defined scalar. Set to 10000 by the authors of Attention Is All You Need
 i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i maps to both sine and cosine functions.</p>
 <h3 id="example">Example</h3>
 <p><a id="figure--fig:label"></a></p>
@@ -130,7 +152,7 @@ i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i
         </figcaption>
 </figure>
 
-<h3 id="coding-the-positional-encoding-matrix">coding the positional encoding matrix</h3>
+<h3 id="coding-the-positional-encoding-matrix">Positional encoding matrix</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">sys</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">readline</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">torch</span>
@@ -148,7 +170,12 @@ i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i
 </span></span><span style="display:flex;"><span>P <span style="color:#000;font-weight:bold">=</span> getPositionEncoding(seq_len<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>, d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">4</span>, n<span style="color:#000;font-weight:bold">=</span><span style="color:#099">100</span>)
 </span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(P)
 </span></span><span style="display:flex;"><span><span style="color:#0086b3">print</span>(readline<span style="color:#000;font-weight:bold">.</span>__doc__)
-</span></span></code></pre></div><h3 id="to-understand-the-positional-encoding--20220729-positional-encoding-dot-md--start-by-looking-at-the-sine-wave-for-different-positions-with-n-10000-and-d-512">To understand the <a href="/posts/20220729-positional_encoding/" rel="">positional encoding</a>, start by looking at the sine wave for different positions with n = 10000 and d = 512</h3>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[[ 0.          1.          0.          1.        ]
+</span></span><span style="display:flex;"><span> [ 0.84147098  0.54030231  0.09983342  0.99500417]
+</span></span><span style="display:flex;"><span> [ 0.90929743 -0.41614684  0.19866933  0.98006658]
+</span></span><span style="display:flex;"><span> [ 0.14112001 -0.9899925   0.29552021  0.95533649]]
+</span></span><span style="display:flex;"><span>Importing this module enables command line editing using GNU readline.
+</span></span></code></pre></div><h3 id="to-understand-the-positional-encoding--20220729-positional-encoding-dot-md--start-by-looking-at-the-sine-wave-for-different-positions-with-n-10000-and-d-512">sine wave for different positions with n = 10000 and d = 512</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">plotSinusoid</span>(k, d<span style="color:#000;font-weight:bold">=</span><span style="color:#099">512</span>, n<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10000</span>):
 </span></span><span style="display:flex;"><span>    x <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>arange(<span style="color:#099">0</span>, <span style="color:#099">100</span>, <span style="color:#099">1</span>)
 </span></span><span style="display:flex;"><span>    denominator <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>power(n, <span style="color:#099">2</span><span style="color:#000;font-weight:bold">*</span>x<span style="color:#000;font-weight:bold">/</span>d)
@@ -162,7 +189,8 @@ i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i
 </span></span><span style="display:flex;"><span>fname <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;images/sinusoid.png&#39;</span>
 </span></span><span style="display:flex;"><span>plt<span style="color:#000;font-weight:bold">.</span>savefig(fname)
 </span></span><span style="display:flex;"><span>fname
-</span></span></code></pre></div></div><div class="post-footer" id="post-footer">
+</span></span></code></pre></div><figure><img src="/ox-hugo/sinusoid.png"/>
+</figure></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -171,7 +199,7 @@ i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/20220729-positional_encoding/" data-title="Positional Encoding in Transformer"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/20220729-positional_encoding/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/20220729-positional_encoding/" data-title="Positional Encoding in Transformer"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/20220729-positional_encoding/" data-title="Positional Encoding in Transformer"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/20220729-positional_encoding/" data-title="Positional Encoding in Transformer"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/20220729-positional_encoding/" data-title="Positional encoding"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/20220729-positional_encoding/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/20220729-positional_encoding/" data-title="Positional encoding"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/20220729-positional_encoding/" data-title="Positional encoding"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/20220729-positional_encoding/" data-title="Positional encoding"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -183,7 +211,7 @@ i: Used for mapping to column indices \(0 \leq i &lt; d/2\). A single value of i
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20220814145521-twist/" class="prev" rel="prev" title="Robotics Twist"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Robotics Twist</a>
+    <div class="post-nav">
             <a href="/posts/20220622111616-np_problem/" class="next" rel="next" title="NP problem">NP problem<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>

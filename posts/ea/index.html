@@ -17,7 +17,7 @@
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/ea/" /><link rel="prev" href="/posts/20220910145601-hermite_matrix/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/ea/" /><link rel="prev" href="/posts/emacs/emacs/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/ea\/"
-        },"genre": "posts","keywords": "hello","wordcount":  91 ,
+        },"genre": "posts","keywords": "hello","wordcount":  215 ,
         "url": "\/posts\/ea\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -99,14 +99,56 @@
     </div><main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Evolving a soft robot</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/projects/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>projects</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;91 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;215 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="content" id="content"><p>Let&rsquo;s see who is the fastest soft robot :).</p>
 <h1 id="evolutionary-algorithm">Evolutionary algorithm</h1>
 <blockquote>
-<p>In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation,[1] a generic population-based metaheuristic optimization algorithm. An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.</p>
+<p>In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation,a generic population-based metaheuristic optimization algorithm. An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.</p>
 <p>&mdash; <a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm" target="_blank" rel="noopener noreffer ">Wikipedia</a></p>
-</blockquote></div><div class="post-footer" id="post-footer">
+</blockquote>
+<h2 id="goal">Goal</h2>
+<p>Generate a set of <strong>soft</strong> robots from scratch, evolve them with EA, then find the fastest soft robot.</p>
+<h2 id="what-we-need">What we need</h2>
+<ol>
+<li>A <strong>physical simulator</strong></li>
+<li>Basic computer graphics to rendering the soft robot.</li>
+<li>A effective EA strategy(how to mutate and crossover).</li>
+<li>Some technique to make it faster.</li>
+</ol>
+<h3 id="physical-simulator">Physical simulator</h3>
+<h4 id="basic-primitives">Basic primitives</h4>
+<p>Masses:</p>
+<ul>
+<li>Point masses(no volume)</li>
+<li>Have position, velocity and acceleration</li>
+</ul>
+<p>Springs:</p>
+<ul>
+<li>Massless</li>
+<li>Connect two masses</li>
+<li>Have a rest length and stiffness</li>
+<li>Apply restoring forces on the masses</li>
+</ul>
+<h4 id="basic-simulator">Basic simulator</h4>
+<ol>
+<li>Choose a discrete time step dt</li>
+<li>At each time step:
+<ul>
+<li>T = T + dt</li>
+<li>Interaction step:
+<ul>
+<li>Compute and tally all the forces acting on each mass from springs connected it</li>
+</ul>
+</li>
+<li>Integration step:
+<ul>
+<li>Update position and velocity of each atom using Newton’s laws of motion F=ma.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -127,7 +169,7 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20220910145601-hermite_matrix/" class="prev" rel="prev" title="Hermite Matrix"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hermite Matrix</a></div>
+    <div class="post-nav"><a href="/posts/emacs/emacs/" class="prev" rel="prev" title="My Emacs"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>My Emacs</a></div>
 </div>
 </article></div>
             </main><footer class="footer">
