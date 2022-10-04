@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>notes - Tag - Jiawei Chen</title>
+        <link>/tags/notes/</link>
+        <description>notes - Tag - Jiawei Chen</description>
+        <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
+            <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/tags/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Euler angles and Quaternion convention</title>
+    <link>/posts/20221004020024-quaternions_and_euler_angles/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20221004020024-quaternions_and_euler_angles/</guid>
+    <description><![CDATA[<p>Transfer between Euler angles to Quaternion</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -20,5 +20,21 @@
     <guid>/tags/hello/</guid>
     <description><![CDATA[]]></description>
 </item>
+<item>
+    <title>notes</title>
+    <link>/tags/notes/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/tags/notes/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>projects</title>
+    <link>/tags/projects/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/tags/projects/</guid>
+    <description><![CDATA[]]></description>
+</item>
 </channel>
 </rss>

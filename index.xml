@@ -7,6 +7,14 @@
             <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Mon, 12 Sep 2022 01:55:00 -0400</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Euler angles and Quaternion convention</title>
+    <link>/posts/20221004020024-quaternions_and_euler_angles/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20221004020024-quaternions_and_euler_angles/</guid>
+    <description><![CDATA[<p>Transfer between Euler angles to Quaternion</p>]]></description>
+</item>
+<item>
     <title>Evolving a soft robot</title>
     <link>/posts/ea/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
