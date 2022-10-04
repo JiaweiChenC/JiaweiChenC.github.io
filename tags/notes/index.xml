@@ -12,5 +12,31 @@
     <guid>/posts/20221004020024-quaternions_and_euler_angles/</guid>
     <description><![CDATA[<p>Transfer between Euler angles to Quaternion</p>]]></description>
 </item>
+<item>
+    <title>NP problem</title>
+    <link>/posts/20220622111616-np_problem/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220622111616-np_problem/</guid>
+    <description><![CDATA[P, NP, NP-complete problem Figure 1: NP problem
+P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
+NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)]]></description>
+</item>
+<item>
+    <title>Positional encoding</title>
+    <link>/posts/20220729-positional_encoding/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220729-positional_encoding/</guid>
+    <description><![CDATA[<p>Positional encoding in Transformer</p>]]></description>
+</item>
+<item>
+    <title>Probability Distribution</title>
+    <link>/posts/20220707211310-probability_distribution/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220707211310-probability_distribution/</guid>
+    <description><![CDATA[<p>Some classic probability distribution</p>]]></description>
+</item>
 </channel>
 </rss>

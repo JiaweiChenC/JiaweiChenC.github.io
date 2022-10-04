@@ -48,5 +48,13 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <guid>/posts/20220729-positional_encoding/</guid>
     <description><![CDATA[<p>Positional encoding in Transformer</p>]]></description>
 </item>
+<item>
+    <title>Probability Distribution</title>
+    <link>/posts/20220707211310-probability_distribution/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220707211310-probability_distribution/</guid>
+    <description><![CDATA[<p>Some classic probability distribution</p>]]></description>
+</item>
 </channel>
 </rss>

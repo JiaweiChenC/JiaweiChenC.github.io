@@ -4,36 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>NP problem - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="NP problem" />
-<meta property="og:description" content="P, NP, NP-complete problem Figure 1: NP problem
-P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
-NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)" />
+        <title>Probability Distribution - Jiawei Chen</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Probability Distribution" />
+<meta property="og:description" content="Some classic probability distribution" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/20220622111616-np_problem/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/20220707211310-probability_distribution/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-19T23:52:39-04:00" />
 <meta property="article:modified_time" content="2022-08-19T23:52:39-04:00" /><meta property="og:site_name" content="My cool site" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NP problem"/>
-<meta name="twitter:description" content="P, NP, NP-complete problem Figure 1: NP problem
-P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
-NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)"/>
+<meta name="twitter:title" content="Probability Distribution"/>
+<meta name="twitter:description" content="Some classic probability distribution"/>
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220622111616-np_problem/" /><link rel="prev" href="/posts/20220729-positional_encoding/" /><link rel="next" href="/posts/emacs/emacs/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220707211310-probability_distribution/" /><link rel="next" href="/posts/20220729-positional_encoding/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "NP problem",
+        "headline": "Probability Distribution",
         "inLanguage": "",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/20220622111616-np_problem\/"
-        },"genre": "posts","keywords": "notes","wordcount":  216 ,
-        "url": "\/posts\/20220622111616-np_problem\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
+            "@id": "\/posts\/20220707211310-probability_distribution\/"
+        },"genre": "posts","keywords": "notes","wordcount":  676 ,
+        "url": "\/posts\/20220707211310-probability_distribution\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -104,10 +100,10 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">NP problem</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Probability Distribution</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/notes/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;216 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;676 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -115,46 +111,72 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#p-np-np-complete-problem">P, NP, NP-complete problem</a>
-      <ul>
-        <li><a href="#p">P</a></li>
-        <li><a href="#np">NP</a></li>
-        <li><a href="#np-complete">NP-complete</a></li>
-        <li><a href="#np-hard">NP-Hard</a></li>
-      </ul>
-    </li>
-    <li><a href="#some-question">Some question</a>
-      <ul>
-        <li><a href="#decision-vs-optimization">Decision vs optimization</a></li>
-      </ul>
-    </li>
+    <li><a href="#bernoulli-distribution">Bernoulli Distribution</a></li>
+    <li><a href="#multinoulli-distribution">Multinoulli Distribution</a></li>
+    <li><a href="#gaussian-distribution">Gaussian Distribution</a></li>
+    <li><a href="#multivariate-normal-distribution">Multivariate Normal Distribution</a></li>
+    <li><a href="#exponential-and-laplace-distribution">Exponential and Laplace Distribution</a></li>
+    <li><a href="#dirac-distribution-and-empirical-distribution">Dirac Distribution and Empirical Distribution</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="p-np-np-complete-problem">P, NP, NP-complete problem</h2>
-<p><a id="figure--fig:label"></a></p>
-<figure><img src="/ox-hugo/NP_problem.png"
-         alt="Figure 1: NP problem"/><figcaption>
-            <p><span class="figure-number">Figure 1: </span>NP problem</p>
-        </figcaption>
-</figure>
-
-<h3 id="p">P</h3>
-<p>A set of problems that can be solved by a deterministic Turing machine in polynomial-time.</p>
-<h3 id="np">NP</h3>
-<p>The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)</p>
-<p>Informally, NP is a set of decision problems that can be solved by a polynomial-time via a lucky algorithm, a magical algorithm that always makes a right guess among the given set of choices.</p>
-<h3 id="np-complete">NP-complete</h3>
-<p>NP-complete problems are the hardest problems in the NP set. A decision problem L is NP-complete if:</p>
-<ol>
-<li>L is in NP(Any given solution for NP-complete problems can be verified quickly, but there is no efficient known solution)</li>
-<li>Every problem in NP is reducible to L in polynomial time</li>
-</ol>
-<h3 id="np-hard">NP-Hard</h3>
-<p>A problem is NP-hard if it follows property 2 mentioned above, and doesn&rsquo;t need to follow property 1. Therefore, the NP-complete set is also a subset of the NP-hard set.</p>
-<h2 id="some-question">Some question</h2>
-<h3 id="decision-vs-optimization">Decision vs optimization</h3>
-<p>NP-completeness applies to the realm of decision problems. Because it&rsquo;s easier to compare the difficulty of decision problems than that of optimization problems.</p>
-</div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><p>Some classic probability distribution</p>
+<h2 id="bernoulli-distribution">Bernoulli Distribution</h2>
+<p>A distribution over a single binary random variable. It is controlled by a single parameter \(\phi \in [0, 1]\), which gives the probability of the random variable being equal to 1.</p>
+<p>\begin{align*}
+P(\mathbf{x} = 1) &amp;= \phi \\
+P(\mathbf{x} = 0) &amp;= 1 - \phi \\
+p(\mathbf{x} = x) &amp;= \phi^x(1-\phi)^{1-x}\\
+E_\mathbf{x}[\mathbf{x}] &amp;= \phi \\
+\text{Var}_\mathbf{x}(\mathbf{x}) &amp;= \phi(1- \phi)
+\end{align*}</p>
+<h2 id="multinoulli-distribution">Multinoulli Distribution</h2>
+<p>The multinoulli distribution is parameterized by a vector \(\mathbf{p} \in [0, 1]^{k-1}\), where p_i gives the probability of the i-th state. The final, k-th state&rsquo;s probability is given by \(1 - \mathbf{1}^T\mathbf{p}\)
+We do not usually need to compute the expectation or variance of multinoulli-distributed random variables.</p>
+<h2 id="gaussian-distribution">Gaussian Distribution</h2>
+<p>The most commonly used distribution over real numbers is the normal distribution:</p>
+<p>\[
+\mathcal{N}\left(x ; \mu, \sigma^{2}\right)=\sqrt{\frac{1}{2 \pi \sigma^{2}}} \exp \left(-\frac{1}{2 \sigma^{2}}(x-\mu)^{2}\right)
+\]</p>
+<p>\(\alpha \in (0, \infty)\) We can use a parameter \(\beta \in (0, \infty)\) to control the precision:</p>
+<p>\[
+\mathcal{N}\left(x ; \mu, \beta^{-1}\right)=\sqrt{\frac{\beta}{2 \pi }} \exp \left(-\frac{\beta}{2 }(x-\mu)^{2}\right)
+\]</p>
+<h2 id="multivariate-normal-distribution">Multivariate Normal Distribution</h2>
+<p>\[
+\mathcal{N}\left(x ; \mu, \Sigma}\right)=\sqrt{\frac{1}{(2 \pi) ^n \text{det}(\Sigma)}} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
+\]</p>
+<p>The parameter μ still gives the mean of the distribution, though now it is vector values. The parameters \(\Sigma\) gives the covariance matrix of the distribution, as in the univariate case, when we wish to evaluate the PDF several times for many different values of the parameters, the covariance is not a computationally efficient way to parameterize the distribution, since we need to invert \(\Sigma\) to evaluate the PDF. We can instead use a precision matrix \(\beta\):</p>
+<p>\[
+\mathcal{N}\left(x ; \mu, \beta^{-1}}\right)=\sqrt{\frac{\text{det}(\beta)}{(2 \pi) ^n }} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
+\]</p>
+<p>We often fix the covariance matrix to be a diagonal matrix. An even simpler version is the isotropic Gaussian distribution, whose covariance matrix is a scalar times the identity matrix.</p>
+<h2 id="exponential-and-laplace-distribution">Exponential and Laplace Distribution</h2>
+<blockquote>
+<p>The Laplacian distribution has been used in speech recognition to model priors on DFT coefficients [5] and in JPEG image compression to model AC coefficients [6] generated by a DCT.</p>
+</blockquote>
+<p>In the context of deep learning, we often want to have a probability distribution with a sharp point at x = 0. To accomplish this, we can use the exponential distribution:</p>
+<p>\[
+p(x; \lambda) = \lambda \mathbf{1}_{x \geq 0} \text{exp}(-\lambda x)
+\]</p>
+<p>The exponential distribution assign probability zero to all negative values of x;</p>
+<p>A closely related probability distribution that allows us to place a sharp peak of probability mass at an arbitrary point μ is the <strong>Laplace distribution</strong></p>
+<p>\[
+\text{Laplace}(x; \mu, \gamma) = \frac{1}{2\gamma} \text{exp}(-\frac{|x-\mu|}{\gamma})
+\]</p>
+<h2 id="dirac-distribution-and-empirical-distribution">Dirac Distribution and Empirical Distribution</h2>
+<p>In some cases, we wish to specify that all of the mass in a probability distribution clusters around a single point. This can be accomplished by defining a PDF using the Dirac delta function:</p>
+<p>\[
+p(x) = \delta(x-\mu)
+\]</p>
+<p>The Dirac delta function is defined such that it is zero-valued everywhere except 0, yet integrates to 1.</p>
+<p>The Dirac delta function is not an ordinary function that associates each value x with a real-valued output, instead it is a different kind of mathematical object called a generalized function that is defined in terms of its properties when integrated.</p>
+<p>A common use of the Dirac delta distribution is as a component of an empirical distribution,</p>
+<p>\[
+\hat{p}(\mathbf{x}) = \frac{1}{m} \sum_{i=1}^{m}\delta(\mathbf{x} - \mathbf{x}^{(i)})
+\]
+Which puts probability mass 1/m on each of the m points forming a given dataset or collection of samples.</p>
+<p>The Dirac delta distribution is only necessary to define the empirical distribution over continuous variables. For discrete variables, the situation is simpler: an empirical distribution can be conceptualized as a multinoulli distribution, with a probability associated to each possible input value that is simply equal to the empirical frequency of that value in the training set.</p>
+<p>We can view the empirical distribution formed from a dataset of training examples as specifying the distribution that we sample from when we train a model on this dataset. Another important perspective on the empirical distribution is that it is the probability density that maximizes the likelihood of the training data.</p></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -163,7 +185,7 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/20220622111616-np_problem/" data-title="NP problem" data-hashtags="notes"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/20220622111616-np_problem/" data-hashtag="notes"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/20220622111616-np_problem/" data-title="NP problem"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/20220707211310-probability_distribution/" data-title="Probability Distribution" data-hashtags="notes"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/20220707211310-probability_distribution/" data-hashtag="notes"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/20220707211310-probability_distribution/" data-title="Probability Distribution"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/20220707211310-probability_distribution/" data-title="Probability Distribution"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/20220707211310-probability_distribution/" data-title="Probability Distribution"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -175,8 +197,8 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20220729-positional_encoding/" class="prev" rel="prev" title="Positional encoding"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Positional encoding</a>
-            <a href="/posts/emacs/emacs/" class="next" rel="next" title="My Emacs">My Emacs<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav">
+            <a href="/posts/20220729-positional_encoding/" class="next" rel="next" title="Positional encoding">Positional encoding<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
