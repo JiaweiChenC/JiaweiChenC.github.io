@@ -38,5 +38,13 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <guid>/posts/20220707211310-probability_distribution/</guid>
     <description><![CDATA[<p>Some classic probability distribution</p>]]></description>
 </item>
+<item>
+    <title>Space Jacobian</title>
+    <link>/posts/20220907234659-space_jacobian/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220907234659-space_jacobian/</guid>
+    <description><![CDATA[<p>Modern Robotics Chapter 3</p>]]></description>
+</item>
 </channel>
 </rss>
