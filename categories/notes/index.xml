@@ -5,6 +5,14 @@
         <description>notes - Category - Jiawei Chen</description>
         <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
             <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/categories/notes/" rel="self" type="application/rss+xml" /><item>
+    <title>Estimator of Gaussian distribution</title>
+    <link>/posts/20220801011126-estimator_of_gaussian_distribution/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220801011126-estimator_of_gaussian_distribution/</guid>
+    <description><![CDATA[<p>How to estimatro Gaussian distribution</p>]]></description>
+</item>
+<item>
     <title>NP problem</title>
     <link>/posts/20220622111616-np_problem/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
@@ -28,7 +36,7 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
     <author>Jiawei Chen</author>
     <guid>/posts/20220707211310-probability_distribution/</guid>
-    <description><![CDATA[<p>Some classic probability distribution</p>]]></description>
+    <description><![CDATA[<p>Some classic Probability distributions</p>]]></description>
 </item>
 <item>
     <title>Space Jacobian</title>
@@ -37,6 +45,14 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <author>Jiawei Chen</author>
     <guid>/posts/20220907234659-space_jacobian/</guid>
     <description><![CDATA[<p>Modern Robotics Chapter 3</p>]]></description>
+</item>
+<item>
+    <title>a printed flower</title>
+    <link>/posts/20221021-lattice/</link>
+    <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20221021-lattice/</guid>
+    <description><![CDATA[Using OpenSCAD to create the model Print it Remove support structure and add light ]]></description>
 </item>
 </channel>
 </rss>
