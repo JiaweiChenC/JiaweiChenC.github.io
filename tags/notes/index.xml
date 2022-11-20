@@ -72,12 +72,24 @@ import time import matplotlib.pyplot as plt from scipy.interpolate import make_i
     <description><![CDATA[<p>A colorful flower.</p>]]></description>
 </item>
 <item>
-    <title>Food printing</title>
-    <link>/posts/20221021-food_printing/</link>
+    <title>Definite Matirx</title>
+    <link>/posts/20220813121237-definite_matrix/</link>
     <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
     <author>Jiawei Chen</author>
-    <guid>/posts/20221021-food_printing/</guid>
-    <description><![CDATA[<p>What&rsquo;s your favorite shape of food</p>]]></description>
+    <guid>/posts/20220813121237-definite_matrix/</guid>
+    <description><![CDATA[Definite matrix Figure 1: Definitions for real matrices
+Definition Positive-definite matrix In mathematics, a symmetric matrix M with real entries is positive-definite if the real number \(z^TMz\)is positive for every nonzero real column vector \(z\), A Hermitian matrix(a complex matrix equal to its conjugate transpose is positive-definite if the real number \(z^{*}Mz\) is positive
+Positive semi-definite Defined similarly, except that \(z^TMz\) and \(z^{*}Mz\) are required to be positive or zero. Negative-definite and negative semi-definite matrices are defined are defined analogously.]]></description>
+</item>
+<item>
+    <title>FaceHuger?</title>
+    <link>/posts/robotics_studio/</link>
+    <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/robotics_studio/</guid>
+    <description><![CDATA[Definite matrix Figure 1: Definitions for real matrices
+Definition Positive-definite matrix In mathematics, a symmetric matrix M with real entries is positive-definite if the real number \(z^TMz\)is positive for every nonzero real column vector \(z\), A Hermitian matrix(a complex matrix equal to its conjugate transpose is positive-definite if the real number \(z^{*}Mz\) is positive
+Positive semi-definite Defined similarly, except that \(z^TMz\) and \(z^{*}Mz\) are required to be positive or zero. Negative-definite and negative semi-definite matrices are defined are defined analogously.]]></description>
 </item>
 </channel>
 </rss>
