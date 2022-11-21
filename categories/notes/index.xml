@@ -31,6 +31,14 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <description><![CDATA[<p>Some classic Probability distributions</p>]]></description>
 </item>
 <item>
+    <title>Skew symmetric matrices</title>
+    <link>/posts/20220813005103-skew_symmetric_matrices/</link>
+    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220813005103-skew_symmetric_matrices/</guid>
+    <description><![CDATA[<p>note about skew symmetric matrices</p>]]></description>
+</item>
+<item>
     <title>Space Jacobian</title>
     <link>/posts/20220907234659-space_jacobian/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
@@ -79,17 +87,7 @@ Positive semi-definite Defined similarly, except that \(z^TMz\) and \(z^{*}Mz\) 
     <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
     <author>Jiawei Chen</author>
     <guid>/posts/robotics_studio/</guid>
-    <description><![CDATA[Definite matrix Figure 1: Definitions for real matrices
-Definition Positive-definite matrix In mathematics, a symmetric matrix M with real entries is positive-definite if the real number \(z^TMz\)is positive for every nonzero real column vector \(z\), A Hermitian matrix(a complex matrix equal to its conjugate transpose is positive-definite if the real number \(z^{*}Mz\) is positive
-Positive semi-definite Defined similarly, except that \(z^TMz\) and \(z^{*}Mz\) are required to be positive or zero. Negative-definite and negative semi-definite matrices are defined are defined analogously.]]></description>
-</item>
-<item>
-    <title>Food printing</title>
-    <link>/posts/20221021-food_printing/</link>
-    <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
-    <author>Jiawei Chen</author>
-    <guid>/posts/20221021-food_printing/</guid>
-    <description><![CDATA[<p>What&rsquo;s your favorite shape of food</p>]]></description>
+    <description><![CDATA[<p>Projects for robotics studio</p>]]></description>
 </item>
 </channel>
 </rss>
