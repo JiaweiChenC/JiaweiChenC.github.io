@@ -17,7 +17,7 @@
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220707211310-probability_distribution/" /><link rel="prev" href="/posts/20220813005103-skew_symmetric_matrices/" /><link rel="next" href="/posts/20220729-positional_encoding/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/20220707211310-probability_distribution/" /><link rel="prev" href="/posts/20220907234659-space_jacobian/" /><link rel="next" href="/posts/20220729-positional_encoding/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/20220707211310-probability_distribution\/"
-        },"genre": "posts","keywords": "notes","wordcount":  676 ,
+        },"genre": "posts","keywords": "notes","wordcount":  647 ,
         "url": "\/posts\/20220707211310-probability_distribution\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -102,7 +102,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Probability Distribution</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/notes/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>notes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;676 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;647 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -143,17 +143,14 @@ We do not usually need to compute the expectation or variance of multinoulli-dis
 \]</p>
 <h2 id="multivariate-normal-distribution">Multivariate Normal Distribution</h2>
 <p>\[
-\mathcal{N}\left(x ; \mu, \Sigma}\right)=\sqrt{\frac{1}{(2 \pi) ^n \text{det}(\Sigma)}} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
+\mathcal{N}\left(x ; \mu, \Sigma\right) =\sqrt{\frac{1}{(2 \pi) ^n \text{det}(\Sigma)}} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
 \]</p>
 <p>The parameter μ still gives the mean of the distribution, though now it is vector values. The parameters \(\Sigma\) gives the covariance matrix of the distribution, as in the univariate case, when we wish to evaluate the PDF several times for many different values of the parameters, the covariance is not a computationally efficient way to parameterize the distribution, since we need to invert \(\Sigma\) to evaluate the PDF. We can instead use a precision matrix \(\beta\):</p>
 <p>\[
-\mathcal{N}\left(x ; \mu, \beta^{-1}}\right)=\sqrt{\frac{\text{det}(\beta)}{(2 \pi) ^n }} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
+\mathcal{N}\left(x ; \mu, \beta^{-1}\right)=\sqrt{\frac{\text{det}(\beta)}{(2 \pi) ^n }} \exp \left(-\frac{1}{2}(x-\mu)^{T} \Sigma^{-1}(x-\mu)\right)
 \]</p>
 <p>We often fix the covariance matrix to be a diagonal matrix. An even simpler version is the isotropic Gaussian distribution, whose covariance matrix is a scalar times the identity matrix.</p>
 <h2 id="exponential-and-laplace-distribution">Exponential and Laplace Distribution</h2>
-<blockquote>
-<p>The Laplacian distribution has been used in speech recognition to model priors on DFT coefficients [5] and in JPEG image compression to model AC coefficients [6] generated by a DCT.</p>
-</blockquote>
 <p>In the context of deep learning, we often want to have a probability distribution with a sharp point at x = 0. To accomplish this, we can use the exponential distribution:</p>
 <p>\[
 p(x; \lambda) = \lambda \mathbf{1}_{x \geq 0} \text{exp}(-\lambda x)
@@ -197,8 +194,8 @@ Which puts probability mass 1/m on each of the m points forming a given dataset 
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/20220813005103-skew_symmetric_matrices/" class="prev" rel="prev" title="Skew symmetric matrices"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Skew symmetric matrices</a>
-            <a href="/posts/20220729-positional_encoding/" class="next" rel="next" title="Positional encoding">Positional encoding<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/20220907234659-space_jacobian/" class="prev" rel="prev" title="Space Jacobian"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Space Jacobian</a>
+            <a href="/posts/20220729-positional_encoding/" class="next" rel="next" title="Positional encoding In Transformer">Positional encoding In Transformer<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">

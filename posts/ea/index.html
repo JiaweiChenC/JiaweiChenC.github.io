@@ -17,7 +17,7 @@
 <meta name="application-name" content="My cool site">
 <meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/ea/" /><link rel="prev" href="/posts/emacs/emacs/" /><link rel="next" href="/posts/20221004020024-quaternions_and_euler_angles/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/ea/" /><link rel="prev" href="/posts/emacs/emacs/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/ea\/"
-        },"genre": "posts","keywords": "projects","wordcount":  351 ,
+        },"genre": "posts","keywords": "projects","wordcount":  402 ,
         "url": "\/posts\/ea\/","datePublished": "2022-08-19T23:52:39-04:00","dateModified": "2022-08-19T23:52:39-04:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -99,7 +99,7 @@
     </div><main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Evolving a soft robot</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Jiawei Chen</a></span>&nbsp;<span class="post-category">included in <a href="/categories/projects/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>projects</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;351 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-08-19">2022-08-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;402 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="content" id="content"><p>Let&rsquo;s see who is the fastest soft robot :). GitHub Link: <a href="https://github.com/JiaweiChenC/Robot-evolving" target="_blank" rel="noopener noreffer ">https://github.com/JiaweiChenC/Robot-evolving</a></p>
 <h2 id="goal">Goal</h2>
@@ -156,11 +156,7 @@ h       - Update position and velocity of each atom using Newton’s laws of mot
 </figure>
 </p>
 <h3 id="evolutionary-algorithm">Evolutionary Algorithm</h3>
-<blockquote>
-<p>In computational intelligence (CI), an evolutionary algorithm (EA) is a subset of evolutionary computation,a generic population-based metaheuristic optimization algorithm. An EA uses mechanisms inspired by biological evolution, such as reproduction, mutation, recombination, and selection. Candidate solutions to the optimization problem play the role of individuals in a population, and the fitness function determines the quality of the solutions (see also loss function). Evolution of the population then takes place after the repeated application of the above operators.</p>
-<p>&mdash; <a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm" target="_blank" rel="noopener noreffer ">Wikipedia</a></p>
-</blockquote>
-<h4 id="competition">Competition</h4>
+<p>Evolutionary Computation is a sub field of Machine Learning that is inspired from biological evolution. The whole idea of evolutionary computation is to develop an algorithm that can solve a very difficult problem that is easy to test. Evolutionary Computation starts off with a random population of solutions. Then, the algorithm identifies certain traits or genes within a solution that are defined by the user. From here, the algorithm will breed two solutions and use recombination and crossover to swap genes between the parents to create a new offspring. This process evolves the original population and the best individuals are selected to survive. Evolutionary computation can be used to solve a variety of problems including the traveling salesperson problem, symbolic regression, circuit design, bridge design, wind turbine design, and robotics.#### Competition</p>
 <figure><img src="/ox-hugo/competetion.gif"
          alt="Figure 1: Bouncing Cubes"/><figcaption>
             <p><span class="figure-number">Figure 1: </span>Bouncing Cubes</p>
@@ -209,8 +205,7 @@ If we have 10000 robots, the algorithm will be 18 times faster than the original
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/emacs/emacs/" class="prev" rel="prev" title="My Emacs"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>My Emacs</a>
-            <a href="/posts/20221004020024-quaternions_and_euler_angles/" class="next" rel="next" title="Euler angles and Quaternion convention">Euler angles and Quaternion convention<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/emacs/emacs/" class="prev" rel="prev" title="My Emacs"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>My Emacs</a></div>
 </div>
 </article></div>
             </main><footer class="footer">

@@ -5,17 +5,7 @@
         <description>notes - Category - Jiawei Chen</description>
         <generator>Hugo -- gohugo.io</generator><managingEditor>jc5667@columbia.edu (Jiawei Chen)</managingEditor>
             <webMaster>jc5667@columbia.edu (Jiawei Chen)</webMaster><lastBuildDate>Fri, 19 Aug 2022 23:52:39 -0400</lastBuildDate><atom:link href="/categories/notes/" rel="self" type="application/rss+xml" /><item>
-    <title>NP problem</title>
-    <link>/posts/20220622111616-np_problem/</link>
-    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
-    <author>Jiawei Chen</author>
-    <guid>/posts/20220622111616-np_problem/</guid>
-    <description><![CDATA[P, NP, NP-complete problem Figure 1: NP problem
-P A set of problems that can be solved by a deterministic Turing machine in polynomial-time.
-NP The NP problems is a set of decision problems that can be solved by a Non-deterministic Turing Machine in polynomial-time, P is a subset of NP(any problem that can be solved by a deterministic machine in polynomial time can also be solved by a non-deterministic machine in polynomial time)]]></description>
-</item>
-<item>
-    <title>Positional encoding</title>
+    <title>Positional encoding In Transformer</title>
     <link>/posts/20220729-positional_encoding/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
     <author>Jiawei Chen</author>
@@ -31,14 +21,6 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <description><![CDATA[<p>Some classic Probability distributions</p>]]></description>
 </item>
 <item>
-    <title>Skew symmetric matrices</title>
-    <link>/posts/20220813005103-skew_symmetric_matrices/</link>
-    <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
-    <author>Jiawei Chen</author>
-    <guid>/posts/20220813005103-skew_symmetric_matrices/</guid>
-    <description><![CDATA[<p>note about skew symmetric matrices</p>]]></description>
-</item>
-<item>
     <title>Space Jacobian</title>
     <link>/posts/20220907234659-space_jacobian/</link>
     <pubDate>Fri, 19 Aug 2022 23:52:39 -0400</pubDate>
@@ -52,7 +34,7 @@ NP The NP problems is a set of decision problems that can be solved by a Non-det
     <pubDate>Sun, 19 Jun 2022 23:52:39 -0400</pubDate>
     <author>Jiawei Chen</author>
     <guid>/posts/20220801011126-estimator_of_gaussian_distribution/</guid>
-    <description><![CDATA[<p>How to estimatro Gaussian distribution</p>]]></description>
+    <description><![CDATA[<p>How to estimate Gaussian distribution</p>]]></description>
 </item>
 <item>
     <title>PID Controller</title>
@@ -88,6 +70,22 @@ Positive semi-definite Defined similarly, except that \(z^TMz\) and \(z^{*}Mz\) 
     <author>Jiawei Chen</author>
     <guid>/posts/robotics_studio/</guid>
     <description><![CDATA[<p>Projects for robotics studio</p>]]></description>
+</item>
+<item>
+    <title>Food printing</title>
+    <link>/posts/20221021-food_printing/</link>
+    <pubDate>Thu, 19 May 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20221021-food_printing/</guid>
+    <description><![CDATA[<p>What&rsquo;s your favorite shape of food</p>]]></description>
+</item>
+<item>
+    <title>Skew symmetric matrices</title>
+    <link>/posts/20220813005103-skew_symmetric_matrices/</link>
+    <pubDate>Mon, 16 May 2022 23:52:39 -0400</pubDate>
+    <author>Jiawei Chen</author>
+    <guid>/posts/20220813005103-skew_symmetric_matrices/</guid>
+    <description><![CDATA[<p>note about skew symmetric matrices</p>]]></description>
 </item>
 </channel>
 </rss>
